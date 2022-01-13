@@ -1,7 +1,8 @@
 ### Project Name
 # Neighborood
 
-### Project Description
+# DESCRIPTION
+
 My neighbours is a site where you will find all the guys around you!
 Neighbours are an integral part of our lives.
 They are the ones who live close
@@ -14,25 +15,30 @@ we can be blind to the needs of students who feel invisible
 or embarrassed because they cannot engage
 in what so many of their classmates take for granted.
 Our students need to know they are valued and supported.
-### Link to Live Project
-https://github.com/Nabuuso/Neighborhood/
-### Author
-Sr Betty Nabuuso
-### Setup Instructions
-* Cloning
-* Install and activate a Virtual Environment
-* Set-up a Database
-* Set your database User and Password 
-* Make Migrations & Migrate
-* Run the application
-### Technologies Used
-* Python-Django
-* Bootstrap/CSS
-* HTML
-* Javascript
-Contact Information
-wagabaliz@gmail.com
 
-License Copyright
-2022, Sr Betty Nabuuso.
-License: MIT
+## User Story
+
+* Sign in with the application to start using.
+* Set up a profile, location and your neighborhood name.
+* Find a list of different businesses in my neighborhood.
+* Find Contact Information for the health department and Police authorities near your neighborhood.
+* Create Posts that will be visible to everyone in your neighborhood.
+* Change your neighborhood when I decide to move out.
+* Only view details of a single neighborhood.
+
+# **SETUP/INSTALLATION.**
+## Prerequisites
+
+- Python3.8
+
+- pip
+
+- Django 
+
+- Virtual environment (virtualenv)
+
+- Code/text editor
+
+- Terminal
+
+Link:-> ```https://github.com/Nabuuso/Neighborhood/
