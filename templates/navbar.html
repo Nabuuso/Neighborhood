@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  {% load bootstrap4 %}
+  {% comment %} {% load bootstrap4 %} {% endcomment %}
   {% comment %} <nav class="navbar navbar-default" style=" background-color: rgb(102, 122, 140);">
     <div class="container-fluid">
      <img src="" width="50" alt=""> 
@@ -22,11 +22,24 @@
   </nav> {% endcomment %}
 
 <!--Navbar-->
+<header>
+<nav>
+  <div class="nav-wrapper #039be5 menu-background">
+       <ul class="right hide-on-med-and-down">
+          <li><a href="login">Login</a></li>
+         
+      </ul>
+  </div>
+</nav>
+</header>
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
   <a class="navbar-brand" href="#">The Hood</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="False" aria-label="Toggle navigation">
+  {% comment %} <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="False" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> {% endcomment %}
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       {% if user.is_authenticated %}
@@ -41,10 +54,11 @@
       {% else %}
 
       <li class="nav-item">
-        <a style="" class="nav-link" href="/login">Login</a>
+        <a style="" class="nav-link" href="login/">Login</a>
       </li>
 
       {% endif %}
+      
     </ul>
   </div>
 </nav>
