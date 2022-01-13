@@ -42,3 +42,21 @@ Our students need to know they are valued and supported.
 - Terminal
 
 Link:-> ```https://github.com/Nabuuso/Neighborhood/
+
+# Technologies Used
+
+* Python-django
+* Postgresql
+* HTML
+* BOOTSTRAP/CSS
+
+# AUTHOR
+
+* Sr Nabuuso Betty(fsp)
+* wagabaliz@gmail.com
+
+# License
+This project is licensed under the MIT License 
+
+* Copyright (c) 2022. Sr Nabuuso Betty(fsp)
+
