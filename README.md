@@ -13,7 +13,7 @@ He is a doctor by profession.
 Living in this beautiful community,
 we can be blind to the needs of students who feel invisible
 or embarrassed because they cannot engage
-in what so many of their classmates take for granted.
+
 
 
 ## User Story
