@@ -9,7 +9,7 @@ The neighbours are the ones who live close
 to us and are often the first point of contact.
 We share our happiness and sorrows with our neighbours.
 
-## User Story
+# User Story
 
 * Sign in with the application to start using.
 * Set up a profile, location and your neighborhood name.
@@ -20,7 +20,7 @@ We share our happiness and sorrows with our neighbours.
 * Only view details of a single neighborhood.
 
 # **SETUP/INSTALLATION.**
-## Prerequisites
+### Prerequisites
 
 - Python3.8
 
@@ -34,10 +34,10 @@ We share our happiness and sorrows with our neighbours.
 
 - Terminal
 
-### Deployed Link: 
+# Deployed Link: 
 https://bettyhood.herokuapp.com/
 
-### Known Bugs
+# Known Bugs
 There is no known bug at the moment
 
 # Technologies Used
