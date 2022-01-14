@@ -8,8 +8,6 @@ Neighbours are an integral part of our lives.
 The neighbours are the ones who live close
 to us and are often the first point of contact.
 We share our happiness and sorrows with our neighbours.
-My neighbour’s name is Mr Shyam Shukla.
-He is a doctor by profession.
 
 ## User Story
 
