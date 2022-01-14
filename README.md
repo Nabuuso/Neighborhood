@@ -39,6 +39,9 @@ He is a doctor by profession.
 ### Deployed Link: 
 https://bettyhood.herokuapp.com/
 
+### Known Bugs
+There is no known bug at the moment
+
 # Technologies Used
 
 * Python-django
