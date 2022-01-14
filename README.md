@@ -57,7 +57,7 @@ https://bettyhood.herokuapp.com/
 * wagabaliz@gmail.com
 
 # License
-This project is licensed under the MIT License 
+This project is licensed  MIT License 
 
 * Copyright (c) 2022. Sr Nabuuso Betty(fsp)
 
