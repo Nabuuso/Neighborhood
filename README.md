@@ -41,7 +41,8 @@ Our students need to know they are valued and supported.
 
 - Terminal
 
-Link:-> ```https://github.com/Nabuuso/Neighborhood/
+### Deployed Link: 
+https://bettyhood.herokuapp.com/
 
 # Technologies Used
 
