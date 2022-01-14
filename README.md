@@ -5,7 +5,7 @@
 
 My neighbours is a site where you will find all the guys around you!
 Neighbours are an integral part of our lives.
-They are the ones who live close
+The neighbours are the ones who live close
 to us and are often the first point of contact.
 We share our happiness and sorrows with our neighbours.
 My neighbour’s name is Mr Shyam Shukla.
