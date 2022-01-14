@@ -10,11 +10,6 @@ to us and are often the first point of contact.
 We share our happiness and sorrows with our neighbours.
 My neighbour’s name is Mr Shyam Shukla.
 He is a doctor by profession.
-Living in this beautiful community,
-we can be blind to the needs of students who feel invisible
-
-
-
 
 ## User Story
 
