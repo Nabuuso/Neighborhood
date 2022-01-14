@@ -37,7 +37,7 @@ or embarrassed because they cannot engage
 
 - Virtual environment (virtualenv)
 
-- Code/text editor
+- Code/text editor(VSCode)
 
 - Terminal
 
