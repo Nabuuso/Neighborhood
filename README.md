@@ -1,5 +1,5 @@
 ## Project Name
-# Neighborood
+# Neighborhood
 
 # DESCRIPTION
 
