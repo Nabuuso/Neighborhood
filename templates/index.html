@@ -2,15 +2,9 @@
 {% load static %}
    
 
-      {% block content %}       
+      {% block content %}
+      {{ block.super }}         
 
- 
-    <div class="text-color: #667a8c " style="text-center" >
-      <img class="card-img" src="https://cdn.pixabay.com/photo/2020/01/04/20/26/holiday-4741593_960_720.jpg" alt="Card image">
-      <div class="card-img-overlay">
-        <h1 style="padding-left: 120px; padding-top: 80px; font-size: 50px; text-align: center; text color:" class="card-title">My <br>Neighborhood</h1>
-      </div>
-    </div>
 
     <div class="row">
       <div class="col-md-6 how-img">
@@ -81,6 +75,6 @@
   </div>
   <!-- Copyright -->
 </footer>
-<!-- Footer -->  
+<!-- Footer --> 
     
-    {% endblock content %}
+  {% endblock content %} 

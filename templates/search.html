@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-5 col-sm-6">
+            <a href="{% url 'index' %}" class="btn btn-light">Back To Feed</a>
+        </div>
+    </div>
+    {% for business in business_list %}
+        <div class="card" style="width: 18rem;">              
+          <div class="card-body">
+            <h5 class="card-title">{{ business.name }}</h5>
+            <p class="card-text">{{business.description}}</p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Info
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Phone: {{ business.phone_number }}</a></li>
+                <li><a class="dropdown-item" href="#">Email: {{ business.email}}</a></li>
+              </ul>
+            </div>
+          </div>
+          <img src="{{business.image.url}}" height="100px" class="card-img-bottom" alt="...">
+        </div>
+
+    {% endfor %}
+    
+   
+</div>
+{% endblock content %}

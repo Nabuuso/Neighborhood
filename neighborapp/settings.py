@@ -35,7 +35,15 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+AUTHENTICATION_BACKENDS = [
+   
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
 
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+    
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -48,9 +56,13 @@ INSTALLED_APPS = [
     'cloudinary',
     'crispy_forms',
     'neighbours',
-    
-    
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
+SITE_ID = 1
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -95,19 +107,8 @@ DATABASES = {
     'PASSWORD':'12345',
     }
 }
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'HOST':os.environ.get('DB_HOST'),
-#         'USER':os.environ.get('DB_USER'),
-#         'PORT':'5432',
-#         'NAME':os.environ.get('DB_NAME'),
-#         'PASSWORD':os.environ.get('DB_PASSWORD')
-#     }
-# }
-
+LOGIN_REDIRECT_URL='home'
+LOGOUT_REDIRECT_URL='home'
 
 
 # Password validation
@@ -148,7 +149,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # STATICFILES_DIRS=[os.path.join(BASE_DIR, '/static/')]
 
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
