@@ -45,6 +45,10 @@
       {% if user.is_authenticated %}
       
       <li class="nav-item">
+        <a style="" class="nav-link" href="{% url 'profile' user.profile.pk%}">Profile</a>
+      </li>
+      
+      <li class="nav-item">
         <a class="nav-link" href="{%url 'account_logout'%}">Logout</a>
       </li>
       <li class="nav-item">
@@ -60,8 +64,10 @@
         <a style="" class="nav-link" href="{% url 'account_signup' %}">Register</a>
       </li>
       <li class="nav-item">
-        <a style="" class="nav-link" href="{% url 'business_Search' %}">Search</a>
+        <a style="" class="nav-link" href="">Search</a>
       </li>
+
+      
 
       {% endif %}
       

@@ -2,11 +2,53 @@ from django.shortcuts import  render, redirect
 from .forms import NewUserForm
 from django.contrib.auth import login, authenticate,logout 
 from django.contrib import messages
-from django.contrib.auth.forms import AuthenticationForm 
+from django.contrib.auth.forms import AuthenticationForm
+from .models import * 
+from django.views import View
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.urls import reverse_lazy
+from django.views.generic import ListView, UpdateView, CreateView, DeleteView
 
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
+
+
+class ProfileView(View):
+    def get(self, request, pk, *args, **kwargs):
+        profile = UserProfile.objects.get(pk=pk)
+        user = profile.user
+        
+        context = {
+            'user': user,
+            'profile': profile,
+        }
+
+        return render(request, 'profile.html', context)
+    
+class ProfileEditView(LoginRequiredMixin, UserPassesTestMixin,UpdateView):
+    model = UserProfile
+    fields = ['neighborhood','email', 'bio', 'birth_date','picture']
+    template_name = 'profile_edit.html'
+
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse_lazy('profile', kwargs={'pk': pk})
+        
+
+    def test_func(self):
+        profile = self.get_object()
+        if self.request.user == profile.user:
+            return True
+        return False
+
+   
+# def search_business(request):
+#     current_user= request.user
+#     if request.method == 'GET':
+#         name = request.GET.get("name")
+#         businesses = Business.objects.filter(name__icontains=name).all()
+#         return render(request, 'search.html', {'businesses': businesses,'current_user':current_user})
 
 # def register_request(request,):
 #     if request.method == "POST":
